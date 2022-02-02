@@ -30,8 +30,7 @@ jobs:
       - name: Run a multi-line script
         run: |
            
-           git add 'yourFileName.py'
-           git commit -m 'yourFileName.py‘
+            touch filenamefoooooo.foo
            # sh ./scripts/addcrt.sh
 
 
