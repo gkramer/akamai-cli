@@ -30,8 +30,7 @@ jobs:
       - name: Run a multi-line script
         run: |
            
-            touch filenamefoooooo.foo
-           # sh ./scripts/addcrt.sh
+            sh ./scripts/addcrt.sh
 
 
 
