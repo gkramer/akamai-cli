@@ -30,5 +30,6 @@ jobs:
       - name: Run a multi-line script
         run: |
               
-              echo ${{ secrets.AKAMAI_TOKEN }}
+              #echo ${{ secrets.AKAMAI_TOKEN }}
+              chmod +x ./scripts/addcrt.sh
               # sh ./scripts/addcrt.sh
