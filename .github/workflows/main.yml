@@ -32,3 +32,4 @@ jobs:
             ${{ secrets.AKAMAI_TOKEN }}
             END
             sh ./scripts/addcrt.sh
+
