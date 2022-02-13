@@ -1,8 +1,8 @@
 #!/bin/bash
 
-git add -A;
-git commit -m "$1";
-git push origin $2
+git commit -am "commit all the things" && git push
+
+
 
 
 # File="./domain/domainlist.txt"
