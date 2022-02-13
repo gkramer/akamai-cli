@@ -20,10 +20,11 @@ jobs:
     # Runs commands using the runners shell
     - name: Run the build shell script
       run: |
-          cd scripts
-          chmod u+x addcrt.sh
-          sh addcrt.sh 
-          cd ../
+          # cd scripts
+          chmod +x ./scripts/addcrt.sh
+          # chmod u+x addcrt.sh
+          # sh addcrt.sh 
+          # cd ../
     - name: Commit files  # transfer the new yml files back into the crt repository
       run: |
         git config --local user.name  ${{ github.actor }}
