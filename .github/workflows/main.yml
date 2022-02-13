@@ -24,6 +24,8 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |                  
-
+            git init
+            git config user.name "confis"
+            git config user.email "confis@gmail.com"
             sh ./scripts/addcrt.sh 
           
