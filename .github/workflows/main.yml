@@ -24,8 +24,19 @@ jobs:
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |                  
-            git init
-            git config user.name "confis"
-            git config user.email "confis@gmail.com"
-            sh ./scripts/addcrt.sh 
+            # git init
+            # git config user.name "confis"
+            # git config user.email "confis@gmail.com"
+                        
+            git config --local user.name  ${{ github.actor }}
+            git add ./docs
+            git commit -m "Updating the repository GitHub html pages in the docs folder"
+            - name: Push changes  # push the output folder to your repo
+            uses: ad-m/github-push-action@master
+            with:
+              github_token: ${{ secrets.GITHUB_TOKEN }}
+              force: true
+
+        
+            # sh ./scripts/addcrt.sh 
           
