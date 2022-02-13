@@ -324,3 +324,4 @@ When you complete an operation, Akamai CLI generates one of these exit codes:
 - `5` (Application error) - Indicates an error with the initial setup. Occurs when you run Akamai CLI for the first time.
 - `6` (Syntax error) - Indicates that the latest command or script cannot be processed.
 - `7` (Syntax error) - Indicates that the commands in your installed packages have conflicting names. To fix this, add a prefix to the commands that have the same name.
+
