@@ -1,5 +1,6 @@
 #!/bin/bash
-File="/domainlist.txt"
+cd domain/
+File= domainlist.txt
  while IFS= read -r line
  do
    cat ./scripts/sample.yml | sed 's/foo.com/'$line'/g' > ./crt/$line.yml
