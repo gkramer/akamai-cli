@@ -20,7 +20,7 @@ jobs:
     # Runs commands using the runners shell
     - name: Run the build shell script
       run: |
-          cd script
+          cd scripts
           sh addcrt.sh 
           cd ../
     - name: Commit files  # transfer the new yml files back into the crt repository
