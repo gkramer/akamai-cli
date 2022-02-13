@@ -18,16 +18,16 @@ jobs:
     - uses: actions/checkout@v2
 
     # Runs commands using the runners shell
-    - name: Run the build php script
+    - name: Run the build shell script
       run: |
           cd script
           sh addcrt.sh 
           cd ../
-    - name: Commit files  # transfer the new html files back into the repository
+    - name: Commit files  # transfer the new yml files back into the crt repository
       run: |
         git config --local user.name  ${{ github.actor }}
         git add ./crt
-        git commit -m "Updating the repository GitHub html pages in the docs folder"
+        git commit -m "Updating the repository GitHub crt pages in the crt folder"
     - name: Push changes  # push the output folder to your repo
       uses: ad-m/github-push-action@master
       with:
